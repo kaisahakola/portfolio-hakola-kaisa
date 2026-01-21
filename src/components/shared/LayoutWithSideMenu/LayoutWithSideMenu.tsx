@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ArrowItem from "../ArrowItems/ArrowItem";
 import "./LayoutWithSideMenu.scss";
 
@@ -12,6 +12,11 @@ const LayoutWithSideMenu = (props: Layoutprops) => {
     const { defaultTitle, defaultItem, children } = props;
     const [selectedItem, setSelectedItem] = useState(defaultItem);
     const [activeTitle, setActiveTitle] = useState(defaultTitle);
+
+    useEffect(() => {
+            setSelectedItem(defaultItem);
+            setActiveTitle(defaultTitle);
+    }, [defaultItem, defaultTitle]);
 
     const openItem = (title: string, item: React.ReactNode) => {
         setSelectedItem(item);

@@ -17,15 +17,18 @@ const Project = (props: ProjectProps) => {
       <div className="project-info-container">
         <Container>
           <div className="link-container">
-            {projectInfo.links.map((link, index) => (
-              <div key={index}>
-                <LinkOrTextWithIcon 
-                  url={link.url} 
-                  iconType={link.url.includes("github") ? "github" : "web"} 
-                  text={link.text}
-                  isExternal={true} />
-              </div>
-            ))}
+            {projectInfo.links.map((link, index) => {
+              const url = link.url || ""
+              return (
+                <div key={index}>
+                  <LinkOrTextWithIcon 
+                    url={url} 
+                    iconType={url.includes("github") ? "github" : "web"} 
+                    text={link.text}
+                    isExternal={true} />
+                </div>
+              )
+            })}
           </div>
         </Container>
 
@@ -57,29 +60,15 @@ const Project = (props: ProjectProps) => {
       </div>
       
       <div className="image-container">
-        {/* Separate mobile and desktop images */}
-        <div className="mobile-images">
-          {projectInfo.images?.filter(image => image.type === "mobile").map((image, index) => (
-            <ImageContainer 
-              key={index}
-              url={image.url}
-              width={image.width}
-              height={image.height}
+        <div className="images">
+          {projectInfo.images?.map((image, idx) => (
+            <ImageContainer
+              key={idx}
+              url={image.asset.url}
+              width={image.asset.metadata.dimensions.width.toString()}
+              height={image.asset.metadata.dimensions.height.toString()}
               altText={`${projectInfo.title} image`}
-              imageType={image.type} 
-            />
-          ))}
-        </div>
-
-        <div className="desktop-images">
-          {projectInfo.images?.filter(image => image.type === "desktop").map((image, index) => (
-            <ImageContainer 
-              key={index}
-              url={image.url}
-              width={image.width}
-              height={image.height}
-              altText={`${projectInfo.title} image`}
-              imageType={image.type} 
+              imageType={image.type}
             />
           ))}
         </div>

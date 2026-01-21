@@ -1,7 +1,7 @@
 import Header from "../Header/Header";
 import './MainPage.scss'
-import Container from "../../shared/Container/Container";
-import LinkOrTextWithIcon from "../../shared/LinkOrTextWithIcon/LinkOrTextWithIcon";
+import { Projects, Skills, Introduction, Contacts } from '../sections';
+
 
 const MainPage = () => {
     return(
@@ -11,13 +11,11 @@ const MainPage = () => {
                 <img src="/images/face-image.jpg" alt="my-face" />
             </div>
 
-            <div className="second-row">
-                <Container hover={true}>
-                    <LinkOrTextWithIcon url="/#/projects" iconType={"project"} text="Go to my projects" isExternal={false} />
-                </Container>
-                <Container hover={true}>
-                    <LinkOrTextWithIcon url="/#/contacts" iconType={"person"} text="Contact me" isExternal={false} />
-                </Container>
+            <div id="sections">
+                <Introduction />
+                <Skills />
+                <Projects />
+                <Contacts />
             </div>
         </div>
     )

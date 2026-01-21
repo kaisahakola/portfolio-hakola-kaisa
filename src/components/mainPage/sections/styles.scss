@@ -1,0 +1,11 @@
+@import "@/common/styles/_variables.scss";
+
+.sectionContainer {
+  border-top: 2px solid $background-shade-1;
+  padding: 10px;
+  
+  h1 {
+    font-family: $font-family-secondary;
+    text-align: center;
+  }
+}

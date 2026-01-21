@@ -1,0 +1,19 @@
+@import "@/common/styles/_variables.scss";
+
+.sectionContainer {
+  #introduction-description {
+    white-space: pre-line;
+    padding: 30px;
+    font-size: medium;
+    text-align: center;
+  }
+}
+
+
+@media screen and (min-width: $breakpoint-m) {
+  .sectionContainer {
+    #introduction-description {
+      margin: 0 100px 0 100px;
+    }
+  }
+}

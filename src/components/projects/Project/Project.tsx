@@ -15,22 +15,20 @@ const Project = (props: ProjectProps) => {
       <h2>{projectInfo.title}</h2>
 
       <div className="project-info-container">
-        <Container>
-          <div className="link-container">
-            {projectInfo.links.map((link, index) => {
-              const url = link.url || ""
-              return (
-                <div key={index}>
-                  <LinkOrTextWithIcon 
-                    url={url} 
-                    iconType={url.includes("github") ? "github" : "web"} 
-                    text={link.text}
-                    isExternal={true} />
-                </div>
-              )
-            })}
-          </div>
-        </Container>
+        <div className="link-container">
+          {projectInfo.links.map((link, index) => {
+            const url = link.url || ""
+            return (
+              <div key={index}>
+                <LinkOrTextWithIcon 
+                  url={url} 
+                  iconType={url.includes("github") ? "github" : "web"} 
+                  text={link.text}
+                  isExternal={true} />
+              </div>
+            )
+          })}
+        </div>
 
         <Container>
           <div className="technologies-container">

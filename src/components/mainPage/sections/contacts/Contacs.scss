@@ -2,8 +2,16 @@
 
 .contact-info-container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 50px;
-  gap: 50px;
+  flex-direction: column;
+  gap: 10px;
+  margin: 30px 0 0 10%;
+}
+
+@media screen and (min-width: $breakpoint-m) {
+  .contact-info-container {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 50px;
+  }
 }

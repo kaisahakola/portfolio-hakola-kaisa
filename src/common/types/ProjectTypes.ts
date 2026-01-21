@@ -1,7 +1,17 @@
 export interface ProjectItem {
+    _id: string;
     title: string;
     links: { url: string; text: string }[];
-    images?: {url: string; width: string; height: string; type: ImageType}[];
+    images?: {
+        type: ImageType;
+        asset: {
+        _id: string;
+        url: string;
+        metadata: {
+            dimensions: { width: number; height: number };
+        };
+        };
+    }[];
     technologies: string[];
     myRole?: string;
     description: string;

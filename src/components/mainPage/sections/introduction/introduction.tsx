@@ -4,7 +4,7 @@ import { AboutMe } from "../../../../common/const/AboutMe";
 
 const Introduction = () => {
   return (
-    <div className="sectionContainer">
+    <div className="sectionContainer" id="introduction-section">
       <h1>Introduction</h1>
 
       <p id="introduction-description">{AboutMe.description}</p>

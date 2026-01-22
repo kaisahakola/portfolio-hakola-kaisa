@@ -5,7 +5,7 @@ import Logo from "../../../assets/icons/icon-blue.png";
 
 const Footer = () => {
     return (
-        <div className="wrapper-footer">
+        <div className="wrapper-footer" id="footer-section">
             <div className="footer-texts">
                 <h3>Kaisa Hakola</h3>
                 <p>2026</p>

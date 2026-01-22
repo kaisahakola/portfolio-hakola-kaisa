@@ -1,6 +1,6 @@
 @import "@/common/styles/_variables.scss";
 
-#skills-section-container {
+#skills-section {
   
   #logos {
     margin: 30px 20px;
@@ -30,7 +30,7 @@
 
 
 @media screen and (min-width: $breakpoint-m) {
-  #skills-section-container {
+  #skills-section {
   
     #logos {
       gap: 50px;

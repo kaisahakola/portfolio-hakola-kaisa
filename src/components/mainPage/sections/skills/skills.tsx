@@ -18,7 +18,7 @@ import CSharpLogoSvg from "../../../../assets/images/logos/c-sharp.svg";
 
 const Skills = () => {
   return (
-    <div className="sectionContainer" id="skills-section-container">
+    <div className="sectionContainer" id="skills-section">
       <h1>Skills</h1>
       <div id="logos">
         <SkillElement icon={SiTypescript} label="TypeScript" />

@@ -6,7 +6,7 @@
     min-height: 100%;
 
     .first-row {
-        img {
+        #profile-picture {
             height: 200px;
             width: auto;
             border-radius: $border-radius-xl;
@@ -39,7 +39,7 @@
         display: grid;
         grid-template-rows: min-content min-content;
 
-        img {
+        #profile-picture {
             height: 250px;
             width: auto;
             border-radius: $border-radius-xxl;

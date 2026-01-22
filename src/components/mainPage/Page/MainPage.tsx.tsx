@@ -8,7 +8,7 @@ const MainPage = () => {
         <div className="wrapper-main-page">
             <div className="first-row">
                 <Header />
-                <img src="/images/face-image.jpg" alt="my-face" />
+                <img src="/images/face-image.jpg" alt="my-face" id="profile-picture" />
             </div>
 
             <div id="sections">

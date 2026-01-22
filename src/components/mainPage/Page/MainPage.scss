@@ -6,8 +6,9 @@
     min-height: 100%;
 
     .first-row {
+        margin: 20% 0 55% 0;
         #profile-picture {
-            height: 200px;
+            height: 175px;
             width: auto;
             border-radius: $border-radius-xl;
             margin-top: 30px;
@@ -48,6 +49,7 @@
 
         .first-row {
             display: flex;
+            margin: 0;
         }
 
         #sections {

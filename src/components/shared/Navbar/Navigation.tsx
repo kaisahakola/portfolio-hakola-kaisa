@@ -16,9 +16,6 @@ const Navigation = () => {
     <div className="navbar">
       <Navbar expand="lg">
         <Container>
-          <Navbar.Brand onClick={() => handleScroll("home")} className="nav-link-brand">
-            Kaisa Hakola
-          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">

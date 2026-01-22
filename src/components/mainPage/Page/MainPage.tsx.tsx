@@ -1,6 +1,6 @@
 import Header from "../Header/Header";
 import './MainPage.scss'
-import { Projects, Skills, Introduction, Contacts } from '../sections';
+import { Projects, Skills, Introduction } from '../sections';
 
 
 const MainPage = () => {
@@ -15,7 +15,6 @@ const MainPage = () => {
                 <Introduction />
                 <Skills />
                 <Projects />
-                <Contacts />
             </div>
         </div>
     )

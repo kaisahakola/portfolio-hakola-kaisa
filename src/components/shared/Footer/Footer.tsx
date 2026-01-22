@@ -20,12 +20,12 @@ const Footer = () => {
                 <LinkOrTextWithIcon 
                     url={`https://${ContactInfo.github}`} 
                     iconType={"github"}
-                    text={ContactInfo.github}
+                    text="kaisahakola"
                     isExternal={true} />
                 <LinkOrTextWithIcon 
                     url={`https://${ContactInfo.linkedIn}`}
                     iconType={"linkedin"}
-                    text={ContactInfo.linkedIn}
+                    text="khakola"
                     isExternal={true} />
             </div>
         </div>

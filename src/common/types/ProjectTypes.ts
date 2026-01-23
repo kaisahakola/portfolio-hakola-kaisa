@@ -1,20 +1,22 @@
-export interface ProjectItem {
+import { IconType } from "./IconType";
+
+export interface ProjectImage {
+  _type: "image";
+  asset: {
+    _ref: string;
+    _type: "reference";
+  };
+  alt?: string;
+}
+
+export interface ProjectItemType {
     _id: string;
     title: string;
-    links: { url: string; text: string }[];
-    images?: {
-        type: ImageType;
-        asset: {
-        _id: string;
-        url: string;
-        metadata: {
-            dimensions: { width: number; height: number };
-        };
-        };
-    }[];
+    links: { url: string; text: string, iconType: IconType }[];
+    image: ProjectImage;
     technologies: string[];
     myRole?: string;
     description: string;
 }
 
-export type ImageType = "desktop" | "mobile";
+export type ImageType = "desktop" | "mobile" | null;

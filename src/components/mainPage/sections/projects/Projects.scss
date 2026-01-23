@@ -1,0 +1,43 @@
+@import "@/common/styles/_variables.scss";
+
+.project-list {
+  h4 {
+    font-family: $font-family-secondary;
+  }
+
+  .project-item-links {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .project-image {
+    border-radius: 8px;
+  }
+
+  .image-desktop {
+    width: 300px;
+    height: auto;
+  }
+
+  .image-mobile {
+    width: 150px;
+    height: auto;
+  }
+}
+
+
+@media screen and (min-width: $breakpoint-m) {
+  .project-list {
+    .image-desktop {
+      width: 400px;
+      height: auto;
+    }
+
+    .image-mobile {
+      width: 200px;
+      height: auto;
+    }
+  }
+}

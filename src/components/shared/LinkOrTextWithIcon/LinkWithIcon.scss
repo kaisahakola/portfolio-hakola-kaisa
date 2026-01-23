@@ -7,9 +7,8 @@
     height: 100%;
 
     img {
-        height: 25px;
+        height: 35px;
         width: auto;
-        margin-right: 5px;
     }
 
     a {
@@ -24,6 +23,10 @@
         &:hover {
             color: $font-color-non-active;
             cursor: pointer;
+
+            img {
+                opacity: 0.5;
+            }
         }
     }
 
@@ -40,10 +43,3 @@
     }
 }
 
-.wrapper-link-with-icon {
-    img {
-        &:hover {
-            opacity: 50%;
-        }
-    }
-}

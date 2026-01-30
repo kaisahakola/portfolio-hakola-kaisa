@@ -1,0 +1,73 @@
+@import "@/common/styles/_variables.scss";
+
+h1 {
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-family: $font-family-secondary;
+}
+
+.project-item-container {
+  padding: 0 10px;
+  margin-top: 20px;
+}
+
+.tech-and-links-container {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 15px 0;
+  gap: 10px;
+}
+
+.project-technologies {
+  margin-bottom: 0;
+  font-family: $font-family-secondary;
+}
+
+.project-item-links {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+  
+.project-image {
+  padding: 10px;
+}
+
+.image-desktop {
+  width: 350px;
+  height: auto;
+}
+
+.image-mobile {
+  width: 175px;
+  height: auto;
+}
+
+
+@media screen and (min-width: $breakpoint-m) {
+  h1 {
+    margin-bottom: 50px;
+  }
+
+  .project-item-container {
+    padding: 0 30px 0 15px;
+    margin-top: 0;
+  }
+
+  .project-item-links {
+    flex-direction: row;
+  }
+
+  .image-desktop {
+    width: 650px;
+    height: auto;
+  }
+
+  .image-mobile {
+    width: 250px;
+    height: auto;
+  }
+}

@@ -5,10 +5,10 @@ import Logo from "../../../assets/icons/icon-blue.png";
 
 const Footer = () => {
     return (
-        <div className="wrapper-footer">
+        <div className="wrapper-footer" id="footer-section">
             <div className="footer-texts">
                 <h3>Kaisa Hakola</h3>
-                <p>2025</p>
+                <p>2026</p>
             </div>
             <div className="footer-logo">
                 <img src={Logo} alt="logo" height="100px" width="100px" />
@@ -20,12 +20,12 @@ const Footer = () => {
                 <LinkOrTextWithIcon 
                     url={`https://${ContactInfo.github}`} 
                     iconType={"github"}
-                    text={ContactInfo.github}
+                    text="kaisahakola"
                     isExternal={true} />
                 <LinkOrTextWithIcon 
                     url={`https://${ContactInfo.linkedIn}`}
                     iconType={"linkedin"}
-                    text={ContactInfo.linkedIn}
+                    text="khakola"
                     isExternal={true} />
             </div>
         </div>

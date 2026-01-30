@@ -12,6 +12,12 @@
   align-items: center;
   width: 100%;
   font-family: $font-family-secondary;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color: $background-shade-4;
+  border-bottom: 0.5px solid black;
+  padding: 0;
 }
 
 .navbar-collapse {
@@ -28,4 +34,8 @@
 .nav-link {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.nav-brand:hover {
+  cursor: pointer;
 }

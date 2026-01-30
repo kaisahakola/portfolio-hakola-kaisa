@@ -1,23 +1,20 @@
 import Header from "../Header/Header";
 import './MainPage.scss'
-import Container from "../../shared/Container/Container";
-import LinkOrTextWithIcon from "../../shared/LinkOrTextWithIcon/LinkOrTextWithIcon";
+import { Projects, Skills, Introduction } from '../sections';
+
 
 const MainPage = () => {
     return(
-        <div className="wrapper-main-page">
+        <div className="wrapper-main-page" id="main-section">
             <div className="first-row">
                 <Header />
-                <img src="/images/face-image.jpg" alt="my-face" />
+                <img src="/images/face-image.jpg" alt="my-face" id="profile-picture" />
             </div>
 
-            <div className="second-row">
-                <Container hover={true}>
-                    <LinkOrTextWithIcon url="/#/projects" iconType={"project"} text="Go to my projects" isExternal={false} />
-                </Container>
-                <Container hover={true}>
-                    <LinkOrTextWithIcon url="/#/contacts" iconType={"person"} text="Contact me" isExternal={false} />
-                </Container>
+            <div id="sections">
+                <Introduction />
+                <Skills />
+                <Projects />
             </div>
         </div>
     )

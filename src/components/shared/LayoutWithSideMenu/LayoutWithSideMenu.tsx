@@ -30,13 +30,13 @@ const LayoutWithSideMenu = (props: Layoutprops) => {
                     if (React.isValidElement(child)) {
                         return (
                             <div 
-                                key={child.props.projectInfo.title} 
-                                onClick={() => openItem(child.props.projectInfo.title, child)}
+                                key={child.props.project.title} 
+                                onClick={() => openItem(child.props.project.title, child)}
                                 className="layout-title"
                             >
                                 <ArrowItem 
-                                    title={child.props.projectInfo.title} 
-                                    isActive={activeTitle === child.props.projectInfo.title} 
+                                    title={child.props.project.title} 
+                                    isActive={activeTitle === child.props.project.title} 
                                 />
                             </div>
                         );

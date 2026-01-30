@@ -1,30 +1,38 @@
-import { Link, NavLink } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import "./Navbar.scss"
+import logo from "../../../assets/icons/icon-blue.png";
 
 const Navigation = () => {
+
+  const handleScroll = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
   return (
     <div className="navbar">
       <Navbar expand="lg">
         <Container>
-          <Navbar.Brand as={Link} to="/" className="nav-link-brand">
-            Kaisa Hakola
+          <Navbar.Brand onClick={() => handleScroll("main-section")} className="nav-brand">
+            <img src={logo} width={45} height={45} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link as={NavLink} to="/"  className="nav-link">
-                Home
+              <Nav.Link onClick={() => handleScroll("introduction-section")} className="nav-link">
+                Introduction
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/about-me" className="nav-link">
-                About me
+              <Nav.Link onClick={() => handleScroll("skills-section")} className="nav-link">
+                Skills
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/projects" className="nav-link">
+               <Nav.Link onClick={() => handleScroll("project-section")} className="nav-link">
                 Projects
               </Nav.Link>
-              <Nav.Link as={NavLink} to="/contacts" className="nav-link">
+              <Nav.Link onClick={() => handleScroll("footer-section")} className="nav-link">
                 Contacts
               </Nav.Link>
             </Nav>

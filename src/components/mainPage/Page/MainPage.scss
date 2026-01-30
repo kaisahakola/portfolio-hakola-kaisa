@@ -1,13 +1,16 @@
 @import "@/common/styles/_variables.scss";
 
 .wrapper-main-page {
-    text-align: center;
     margin: 5% 0 20% 0;
     min-height: 100%;
+    scroll-margin-top: 200px;
 
     .first-row {
-        img {
-            height: 200px;
+        margin: 20% 0 55% 0;
+        text-align: center;
+
+        #profile-picture {
+            height: 175px;
             width: auto;
             border-radius: $border-radius-xl;
             margin-top: 30px;
@@ -15,24 +18,8 @@
         }
     }
 
-    .second-row {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        padding: 30px 5px;
-
-        a {
-            padding: 10px;
-            &:hover {
-                color: $background-shade-1;
-            }
-        }
-
-        .container-wrapper-hover {
-            padding: 0;
-        }
+    #sections {
+        margin-top: 10px;
     }
 }
 
@@ -45,23 +32,16 @@
                 margin-top: 50px;
             }
         }
-
-        .second-row {
-            padding-top: 50px;
-            margin-bottom: 0;
-        }
     }
 }
 
 @media screen and (min-width: $breakpoint-m) {
     .wrapper-main-page {
-        text-align: left;
-        margin: 10% 0 20% 0;
-        padding-left: 10rem;
+        margin: 10% 0 5% 0;
         display: grid;
         grid-template-rows: min-content min-content;
 
-        img {
+        #profile-picture {
             height: 250px;
             width: auto;
             border-radius: $border-radius-xxl;
@@ -70,14 +50,12 @@
 
         .first-row {
             display: flex;
+            margin: 0;
+            text-align: left;
         }
 
-        .second-row {
-            justify-content: flex-start;
-
-            a {
-                font-size: $font-size-xs;
-            }
+        #sections {
+            margin-top: 25%;
         }
     }
 }

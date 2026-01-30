@@ -2,6 +2,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import "./Navbar.scss"
+import logo from "../../../assets/icons/icon-blue.png";
 
 const Navigation = () => {
 
@@ -16,6 +17,9 @@ const Navigation = () => {
     <div className="navbar">
       <Navbar expand="lg">
         <Container>
+          <Navbar.Brand onClick={() => handleScroll("main-section")} className="nav-brand">
+            <img src={logo} width={45} height={45} />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">

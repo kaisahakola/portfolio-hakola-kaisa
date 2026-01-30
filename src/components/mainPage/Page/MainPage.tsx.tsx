@@ -5,7 +5,7 @@ import { Projects, Skills, Introduction } from '../sections';
 
 const MainPage = () => {
     return(
-        <div className="wrapper-main-page">
+        <div className="wrapper-main-page" id="main-section">
             <div className="first-row">
                 <Header />
                 <img src="/images/face-image.jpg" alt="my-face" id="profile-picture" />

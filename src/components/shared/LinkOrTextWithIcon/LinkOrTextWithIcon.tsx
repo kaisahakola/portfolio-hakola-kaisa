@@ -20,13 +20,13 @@ const LinkOrTextWithIcon = ({ url, text, iconType, isExternal}: LinkProps) => {
             icon = <img src={WebIcon} alt={"web icon"} />;
             break;
         case "github":
-            icon = <GitHub size={35} />;
+            icon = <GitHub size={25} />;
             break;
         case "linkedin":
-            icon = <Linkedin size={35} />;
+            icon = <Linkedin size={25} />;
             break;
         case "email":
-            icon = <Mail size={35} />;
+            icon = <Mail size={25} />;
             break;
         case "project":
             icon = <img src={ProjectIcon} alt={"project icon"} />;

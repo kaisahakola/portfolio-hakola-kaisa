@@ -1,8 +1,7 @@
 import { IconType } from "./IconType";
 
 export interface ProjectImage {
-  _type: "image";
-  asset: {
+   asset: {
     _ref: string;
     _type: "reference";
   };
@@ -13,7 +12,7 @@ export interface ProjectItemType {
     _id: string;
     title: string;
     links: { url: string; text: string, iconType: IconType }[];
-    image: ProjectImage;
+    images: ProjectImage[];
     technologies: string[];
     myRole?: string;
     description: string;

@@ -1,43 +1,73 @@
 @import "@/common/styles/_variables.scss";
 
-.project-list {
-  h4 {
-    font-family: $font-family-secondary;
-  }
+h1 {
+  margin-bottom: 30px;
+}
 
-  .project-item-links {
-    width: fit-content;
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-  }
+h3 {
+  font-family: $font-family-secondary;
+}
 
-  .project-image {
-    border-radius: 8px;
-  }
+.project-item-container {
+  padding: 0 10px;
+  margin-top: 20px;
+}
 
-  .image-desktop {
-    width: 300px;
-    height: auto;
-  }
+.tech-and-links-container {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 15px 0;
+  gap: 10px;
+}
 
-  .image-mobile {
-    width: 150px;
-    height: auto;
-  }
+.project-technologies {
+  margin-bottom: 0;
+  font-family: $font-family-secondary;
+}
+
+.project-item-links {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+  
+.project-image {
+  padding: 10px;
+}
+
+.image-desktop {
+  width: 350px;
+  height: auto;
+}
+
+.image-mobile {
+  width: 175px;
+  height: auto;
 }
 
 
 @media screen and (min-width: $breakpoint-m) {
-  .project-list {
-    .image-desktop {
-      width: 400px;
-      height: auto;
-    }
+  h1 {
+    margin-bottom: 50px;
+  }
 
-    .image-mobile {
-      width: 200px;
-      height: auto;
-    }
+  .project-item-container {
+    padding: 0 30px 0 15px;
+    margin-top: 0;
+  }
+
+  .project-item-links {
+    flex-direction: row;
+  }
+
+  .image-desktop {
+    width: 650px;
+    height: auto;
+  }
+
+  .image-mobile {
+    width: 250px;
+    height: auto;
   }
 }

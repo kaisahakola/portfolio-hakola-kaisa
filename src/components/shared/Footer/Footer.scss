@@ -1,8 +1,8 @@
 @import "@/common/styles/_variables.scss";
 
 .wrapper-footer {
-    background-color: $background-shade-5;
-    border-top: 2px solid $background-shade-1;
+    background-color: $background-shade-3;
+    border-top: 2px solid $font-color-primary;
     height: $footer-height-mobile;
     display: grid;
     grid-template-columns: auto auto;
@@ -21,6 +21,7 @@
     align-items: flex-start;
     justify-content: center;
     padding: 10px;
+    color: $font-color-primary;
 
     .wrapper-link-with-icon, .wrapper-text-with-icon {
         padding: 10px;
@@ -38,7 +39,8 @@
 
 .footer-texts {
     padding: 20px;
-
+    color: $font-color-primary;
+    
     h3 {
         font-family: $font-family-secondary;
     }

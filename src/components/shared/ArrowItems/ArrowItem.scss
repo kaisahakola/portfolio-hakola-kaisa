@@ -19,7 +19,7 @@
     }
 
     p:hover {
-        color: $font-color-link-hover;
+        color: $font-color-non-active;
     }
 }
 
@@ -32,7 +32,9 @@
 }
 
 .container-arrow-item.active {
-    color: $font-color-active;
+    p {
+        color: $font-color-primary;
+    }
 }
 
 @media screen and (min-width: $breakpoint-s) {

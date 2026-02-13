@@ -8,5 +8,10 @@
   h1 {
     font-family: $font-family-secondary;
     text-align: center;
+    color: $font-color-primary;
+  }
+
+  p {
+    color: $font-color-secondary;
   }
 }

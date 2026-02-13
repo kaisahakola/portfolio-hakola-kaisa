@@ -1,11 +1,11 @@
 @import "@/common/styles/_variables.scss";
 
 .container-wrapper, .container-wrapper-hover {
-    background-color: $background-shade-2;
+    background-color: $background-shade-3;
     width: fit-content;
     padding: 10px;
     float: left;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 2px solid $font-color-primary;
 }
 
 .container-wrapper-hover {

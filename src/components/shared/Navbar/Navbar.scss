@@ -3,7 +3,7 @@
 /* ! Navbar */
 .nav-link:hover,
 .nav-link a:hover {
-  color: $font-color-link-hover;
+  color: $font-color-non-active;
 }
 
 .navbar {
@@ -15,8 +15,8 @@
   position: sticky;
   top: 0;
   overflow: hidden;
-  background-color: $background-shade-4;
-  border-bottom: 0.5px solid black;
+  background-color: $background-shade-3;
+  border-bottom: 0.5px solid $font-color-primary;
   padding: 0;
 }
 
@@ -34,7 +34,15 @@
 .nav-link {
   padding-left: 1rem;
   padding-right: 1rem;
+  color: $font-color-secondary;
 }
+
+.navbar .nav-link:focus,
+.navbar .nav-link:focus-visible,
+.navbar .nav-link:active {
+  color: $font-color-primary !important;
+}
+
 
 .nav-brand:hover {
   cursor: pointer;

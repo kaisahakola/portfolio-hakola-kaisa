@@ -5,10 +5,16 @@
         font-size: 5rem;
         animation: slide 2s;
         font-family: $font-family-secondary;
+        color: $font-color-primary;
     }
 
     p {
         font-size: $font-size-s;
+        color: $font-color-primary;
+    }
+
+    h3 {
+        color: $font-color-primary;
     }
 }
 

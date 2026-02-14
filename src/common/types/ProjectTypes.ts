@@ -16,6 +16,7 @@ export interface ProjectItemType {
     technologies: string[];
     myRole?: string;
     description: string;
+    placement: number;
 }
 
 export type ImageType = "desktop" | "mobile" | null;

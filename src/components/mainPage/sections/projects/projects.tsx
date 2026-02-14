@@ -17,7 +17,8 @@ const Projects = () => {
           images,
           technologies,
           myRole,
-          description
+          description,
+          placement
         }`)
         .then((data) => {
           console.log('fetched data: ', data)
@@ -26,18 +27,24 @@ const Projects = () => {
         .catch((err) => console.error('Error fetching data: ', err))
   }, [])
 
-  const defaultItem = projects[0]
-    ? <ProjectItem project={projects[0]} />
+  
+  const firstProject = projects.find((project) => project.placement === 1);
+
+  const defaultItem = firstProject
+    ? <ProjectItem project={firstProject} />
     : null;
 
-    const defaultTitle = projects[0]?.title ?? "";
+  const defaultTitle = firstProject?.title ?? "";
 
   return (
     <div className="sectionContainer" id="project-section">
       <h1>Projects</h1>
       <div className="project-list">
         <LayoutWithSideMenu defaultItem={defaultItem} defaultTitle={defaultTitle}>
-          {projects.map((project) => (
+          {projects
+            .slice()
+            .sort((a, b) => a.placement - b.placement)
+            .map((project) => (
               <ProjectItem project={project} key={project._id} />
           ))}
         </LayoutWithSideMenu>
